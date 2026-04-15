@@ -1,0 +1,17 @@
+* EXCEPTION:
+* ERROR - :dx method missing on ~Class~.
+
+#+begin_src ~Class#inspect~
+NIL
+#+end_src ~Class#inspect~
+
+
+
+The method named
+  :dx
+doesn't exist on [NilClass].
+
+(suggestions above)
+** Backtrace:
+*** app/main.rb:25:in tick
+*** app/main.rb:23:in tick
