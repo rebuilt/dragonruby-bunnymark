@@ -1,6 +1,6 @@
 def tick(args)
   # 1. Initialize State
-  args.state.bunny_count ||= 10000
+  # args.state.bunny_count ||= 1000
   args.state.bunnies ||= []
 
   # 2. sets console command when sample app initially opens. Sets command to reset game with 100 bunnies. User can change this number by typing in the console "reset_with count: 500" to reset with 500 bunnies, for example.
@@ -10,7 +10,7 @@ def tick(args)
     puts "========================================================="
     puts "* INFO: Sprites, Hashes"
     puts "* INFO: Please specify the number of sprites to render."
-    GTK.console.set_command "reset_with count: 100"
+    GTK.console.set_command "reset_with count: 1000"
   end
 
   # 3. Update bunny Positions & Handle Bouncing
